@@ -42,7 +42,7 @@ public class TestCreateCourier
                     .assertThat ()
                     .statusCode (HTTP_CONFLICT)
                     .and ()
-                    .assertThat ().body ("message", equalTo ("Этот логин уже используется."));
+                    .assertThat ().body ("message", equalTo ("Этот логин уже используется. Попробуйте другой."));
         }
 
         @Test
